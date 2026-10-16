@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Instala o actualiza el asistente en el Wyse (Debian 12). Ejecutar como root:
+# Instala o actualiza el asistente en el Wyse (Debian 13). Ejecutar como root:
 #   primera vez: sudo git clone <repo> /opt/asistente && sudo bash /opt/asistente/deploy/install.sh
 #   actualizar:  sudo bash /opt/asistente/deploy/install.sh
 set -euo pipefail

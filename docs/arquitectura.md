@@ -7,7 +7,7 @@
   consume ~80–150 MB de RAM y unos 5 W.
 - **Los datos se quedan en local**: base SQLite, adjuntos temporales, credenciales y logs
   viven en el Wyse. A la API solo viaja lo que hace falta para cada pregunta.
-- **Python 3.11** (el de Debian 12): hay librerías maduras para todo (Odoo es Python,
+- **Python 3.13** (el de Debian 13 "trixie"): hay librerías maduras para todo (Odoo es Python,
   Stripe, Google, IMAP, Telegram).
 - **Sin Docker** de inicio: el eMMC de 8/16 GB va justo. Un `venv` + `systemd` basta.
 

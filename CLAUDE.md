@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-Asistente empresarial en Python que corre en un Dell Wyse 3040 (Debian 12, 2 GB RAM, Python 3.11)
+Asistente empresarial en Python que corre en un Dell Wyse 3040 (Debian 13 "trixie", 2 GB RAM, Python 3.13)
 y se controla por Telegram. Claude (API de Anthropic) es el cerebro; el Wyse solo orquesta.
 
 ## Contexto para continuar en cualquier ordenador

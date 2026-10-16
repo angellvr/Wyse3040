@@ -1,8 +1,8 @@
 # Despliegue en el Dell Wyse 3040
 
-## 1. Instalar Debian 12 (bookworm)
+## 1. Instalar Debian 13 (trixie)
 
-1. Descarga `debian-12.x-amd64-netinst.iso` y grábala en un USB (Rufus o balenaEtcher).
+1. Descarga `debian-13.x-amd64-netinst.iso` (debian.org → Descargar) y grábala en un USB (Rufus o balenaEtcher).
 2. En el Wyse pulsa **F2** al arrancar para entrar en la BIOS (contraseña de fábrica habitual: `Fireport`).
    - *General → Boot Sequence*: modo **UEFI**, activa el arranque por USB.
    - *Secure Boot*: **desactivado**.

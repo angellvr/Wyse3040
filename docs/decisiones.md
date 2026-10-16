@@ -3,7 +3,8 @@
 ## Decisiones (2026-10-16)
 
 - **Cerebro en la API de Claude**, no un modelo local: el Wyse 3040 no tiene RAM para un LLM.
-- **Python 3.11 + venv + systemd**, sin Docker, por el poco espacio del eMMC.
+- **Debian 13 "trixie"** (estable actual; Debian 12 ya solo tiene soporte LTS hasta 2028).
+- **Python 3.13 (el de Debian 13) + venv + systemd**, sin Docker, por el poco espacio del eMMC.
 - **Telegram** como interfaz: gratis, push y botones, sin abrir puertos.
 - **SQLite** para el estado local.
 - **Solo lectura por defecto**; las acciones con efecto requieren confirmación por botón.

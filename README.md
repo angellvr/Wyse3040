@@ -1,6 +1,6 @@
 # Asistente empresarial en Dell Wyse 3040
 
-Asistente personal para la empresa que corre 24/7 en un **Dell Wyse 3040** (Debian 12, 2 GB RAM)
+Asistente personal para la empresa que corre 24/7 en un **Dell Wyse 3040** (Debian 13, 2 GB RAM)
 y se controla desde **Telegram**. El "cerebro" es Claude (API de Anthropic); el Wyse solo
 orquesta: lee correos, llama a Odoo/Stripe/CRM, sube facturas a Google Drive y te avisa.
 
