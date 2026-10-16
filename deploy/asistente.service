@@ -1,0 +1,21 @@
+[Unit]
+Description=Asistente empresarial (Telegram + Claude)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=asistente
+WorkingDirectory=/opt/asistente
+ExecStart=/opt/asistente/.venv/bin/python -m asistente
+Restart=always
+RestartSec=10
+# Limita memoria para proteger el sistema (el Wyse tiene 2 GB)
+MemoryMax=600M
+NoNewPrivileges=true
+ProtectSystem=strict
+ReadWritePaths=/opt/asistente/data
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

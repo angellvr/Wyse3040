@@ -1,0 +1,30 @@
+# Copia a config/cuentas.yaml (no se sube a GitHub). Las contraseñas van en .env.
+
+empresa: |
+  Nombre: Mi Empresa S.L. (CIF B00000000)
+  Actividad: ...
+  Personas: ...
+  Moneda: EUR. IVA general 21 %.
+
+correo:
+  - nombre: principal
+    usuario: info@miempresa.com
+    password_env: CORREO_PRINCIPAL_PASSWORD
+    imap_host: imap.gmail.com          # Outlook/365: outlook.office365.com
+    smtp_host: smtp.gmail.com          # Outlook/365: smtp.office365.com
+    smtp_puerto: 587
+    carpetas: [INBOX]
+    puede_enviar: true
+
+  - nombre: facturas
+    usuario: facturas@miempresa.com
+    password_env: CORREO_FACTURAS_PASSWORD
+    imap_host: imap.gmail.com
+    carpetas: [INBOX]
+    puede_enviar: false
+
+# Rutas GET permitidas de la API del CRM ({id} se sustituye por el identificador)
+crm_rutas:
+  clientes: /api/clientes
+  cliente: /api/clientes/{id}
+  oportunidades: /api/oportunidades
