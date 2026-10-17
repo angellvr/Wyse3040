@@ -26,6 +26,8 @@ usermod -aG sudo angel
 exit
 ```
 
+Cierra la sesión del todo y vuelve a entrar; `groups` debe mostrar `sudo`.
+
 ```bash
 sudo apt install -y zram-tools unattended-upgrades curl
 echo -e "ALGO=zstd\nPERCENT=50" | sudo tee /etc/default/zramswap
@@ -42,15 +44,16 @@ Recomendado: instala **Tailscale** para administrarlo desde fuera sin abrir puer
 En el Wyse genera una clave de despliegue de solo lectura:
 
 ```bash
-sudo -u root ssh-keygen -t ed25519 -f /root/.ssh/github_asistente -N ""
-cat /root/.ssh/github_asistente.pub
+sudo mkdir -p -m 700 /root/.ssh
+sudo ssh-keygen -t ed25519 -f /root/.ssh/github_asistente -N "" -C "wyse3040"
+sudo cat /root/.ssh/github_asistente.pub
 ```
 
-Añádela en GitHub → repo → *Settings → Deploy keys* (sin permiso de escritura) y crea `/root/.ssh/config`:
+Añádela en GitHub → repo → *Settings → Deploy keys* (sin permiso de escritura) y configura SSH para usarla:
 
-```
-Host github.com
-  IdentityFile /root/.ssh/github_asistente
+```bash
+printf 'Host github.com\n  IdentityFile /root/.ssh/github_asistente\n' | sudo tee -a /root/.ssh/config
+sudo ssh -T git@github.com    # acepta la huella con "yes"; debe saludar con el nombre del repo
 ```
 
 ## 4. Instalar el asistente
