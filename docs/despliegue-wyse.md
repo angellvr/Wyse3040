@@ -27,7 +27,7 @@ exit
 ```
 
 ```bash
-sudo apt install -y zram-tools unattended-upgrades
+sudo apt install -y zram-tools unattended-upgrades curl
 echo -e "ALGO=zstd\nPERCENT=50" | sudo tee /etc/default/zramswap
 sudo systemctl restart zramswap
 sudo dpkg-reconfigure -plow unattended-upgrades   # actualizaciones de seguridad automáticas
