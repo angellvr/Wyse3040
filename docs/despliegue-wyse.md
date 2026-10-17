@@ -16,6 +16,16 @@ Si el instalador no ve el eMMC, actualiza la BIOS del Wyse desde la web de Dell.
 
 ## 2. Ajustes del sistema
 
+Si en el instalador pusiste contraseña de root, `sudo` no viene instalado. Actívalo primero
+(sustituye `angel` por tu usuario) y vuelve a iniciar sesión:
+
+```bash
+su -                      # contraseña de root; el guion es necesario
+apt install -y sudo
+usermod -aG sudo angel
+exit
+```
+
 ```bash
 sudo apt install -y zram-tools unattended-upgrades
 echo -e "ALGO=zstd\nPERCENT=50" | sudo tee /etc/default/zramswap
