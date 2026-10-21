@@ -15,7 +15,9 @@
 ## Estado
 
 - [x] v0.1 escrita: núcleo, bot, correo y facturas → Drive, Odoo, Stripe, CRM (genérico) y notas.
-- [ ] Instalar Debian en el Wyse y desplegar.
+- [x] Debian 13 instalado en el Wyse (usuario `angel`); `sudo` y `curl` instalados.
+- [ ] Terminar la preparación del Wyse (Tailscale, deploy key) y desplegar. Detalle en [traspaso.md](traspaso.md).
+- [ ] Decidir si el clasificador de correos usa `claude-haiku-5-5` (~$1 al mes frente a ~$40).
 - [ ] Rellenar credenciales y probar cada módulo contra los servicios reales (todavía no se ha ejecutado nada).
 - [ ] Adaptar `crm.py` a la API real del CRM propio.
 - [ ] Decidir si las cuentas de Outlook/365 necesitan OAuth.

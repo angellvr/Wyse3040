@@ -6,6 +6,8 @@ y se controla por Telegram. Claude (API de Anthropic) es el cerebro; el Wyse sol
 ## Contexto para continuar en cualquier ordenador
 
 - El estado del proyecto vive en este repo: lee `README.md` y `docs/` antes de empezar.
+- Si vienes de otra cuenta u ordenador, empieza por `docs/traspaso.md`: estado del Wyse y pendientes.
+- El usuario ejecuta los comandos en la consola del Wyse y pega aquí la salida: dale comandos de uno en uno.
 - Decisiones tomadas y pendientes: `docs/decisiones.md` (actualízalo al cerrar cada sesión de trabajo).
 - Los secretos (`.env`, `config/cuentas.yaml`, `data/`, `conocimiento/`) NO están en git; solo existen en el Wyse.
 
